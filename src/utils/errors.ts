@@ -23,22 +23,6 @@ export const ERRORS = {
     statusCode: StatusCodes.BAD_REQUEST,
     message: 'Invalid data in query string or request body. Please check your request.',
   },
-
-  // External Errors
-  MONGO_ACK_FAILED: {
-    name: 'MongoAckFailed',
-    code: 'EE000',
-    statusCode: StatusCodes.INTERNAL_SERVER_ERROR,
-    message: 'MongoDB acknowledgement has failed.',
-  },
-
-  // Service Errors
-  NO_SUCH_TODO: {
-    name: 'NoSuchTodo',
-    code: 'SE000',
-    statusCode: StatusCodes.NOT_FOUND,
-    message: 'Cannot find a todo item with the given todoId.',
-  },
 } as const;
 
 type ErrorKey = keyof typeof ERRORS;

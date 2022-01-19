@@ -11,7 +11,7 @@
   export let status: number;
 </script>
 
-<div class="fixed w-full h-full grid place-items-center">
+<div class="absolute w-full h-full grid place-items-center">
   <section class="p-8 border-gray-500 rounded">
     <h1 class="text-center text-4xl font-mono-mt-4">{status}</h1>
     <p class="text-center">{error.message}</p>

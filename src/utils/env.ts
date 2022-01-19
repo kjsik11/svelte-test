@@ -1,4 +1,4 @@
-const ENVIRONMENT_VARIABLES = ['VITE_MONGODB_URI', 'VITE_MONGODB_NAME'] as const;
+const ENVIRONMENT_VARIABLES = [] as const;
 
 type EnvironmentVariable = typeof ENVIRONMENT_VARIABLES[number];
 
